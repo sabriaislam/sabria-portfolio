@@ -34,19 +34,13 @@ export default function Home() {
             brave, teachers feel supported, and learning feel alive.
           </p>
           <div className="flex flex-wrap gap-3">
-            <button className="rounded-full bg-[#111118] px-6 py-3 text-sm font-semibold text-white">
+            <button className="bg-[#111118] px-6 py-3 text-sm font-semibold text-white">
               View case studies
             </button>
-            <button className="rounded-full border border-[#111118]/15 px-6 py-3 text-sm font-semibold text-[#111118]">
+            <button className="border border-[#111118]/15 px-6 py-3 text-sm font-semibold text-[#111118]">
               Let&apos;s collaborate
             </button>
           </div>
-        </div>
-        <div className="flower-cluster" aria-hidden="true">
-          <img className="flower flower-blue" src="/Blue.svg" alt="" />
-          <img className="flower flower-green" src="/Green.svg" alt="" />
-          <img className="flower flower-orange" src="/Orange.svg" alt="" />
-          <img className="flower flower-pink" src="/Pink.svg" alt="" />
         </div>
       </section>
 

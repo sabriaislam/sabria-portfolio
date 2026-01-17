@@ -84,6 +84,7 @@ export default function MediaPage() {
                   {section.description}
                 </p>
               </div>
+              <div className="media-section-hero" aria-hidden="true" />
               <div className="media-grid">
                 {section.items.map((item, index) => {
                   const colorClass = colorClasses[index % colorClasses.length];
@@ -114,7 +115,7 @@ export default function MediaPage() {
             education project.
           </p>
         </div>
-        <button className="rounded-full bg-[#14151f] px-6 py-3 text-sm font-semibold text-white">
+        <button className="bg-[#14151f] px-6 py-3 text-sm font-semibold text-white">
           Say hello
         </button>
       </section>

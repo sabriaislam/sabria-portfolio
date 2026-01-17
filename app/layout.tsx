@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { Inter } from "next/font/google";
+import FlowerCluster from "./components/FlowerCluster";
 import "./globals.css";
 
 const inter = Inter({
@@ -27,7 +28,10 @@ export default function RootLayout({
         <div className="page-wrap">
           <div className="site-shell">
             <aside className="site-nav">
-              <Link href="/" className="display text-2xl font-semibold">
+              <Link
+                href="/"
+                className="display text-2xl font-semibold text-center"
+              >
                 Sabria Islam
               </Link>
               <nav className="flex flex-col gap-3 text-sm font-medium">
@@ -49,9 +53,7 @@ export default function RootLayout({
                   Resume
                 </a>
               </nav>
-              <p className="text-sm text-[#4b5163]">
-                Designing joyful K-12 learning experiences.
-              </p>
+              <FlowerCluster />
             </aside>
             <main className="site-content">{children}</main>
           </div>
