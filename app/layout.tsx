@@ -30,9 +30,9 @@ export default function RootLayout({
             <aside className="site-nav">
               <Link
                 href="/"
-                className="display text-2xl font-semibold text-center"
+                className="display text-2xl font-bold text-center"
               >
-                Sabria Islam
+                SABRIA ISLAM
               </Link>
               <nav className="flex flex-col gap-3 text-sm font-medium">
                 <Link href="/" className="chip nav-link">

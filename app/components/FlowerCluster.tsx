@@ -12,24 +12,28 @@ export default function FlowerCluster() {
     }
 
     const prefersReduced = window.matchMedia("(prefers-reduced-motion: reduce)");
-    if (prefersReduced.matches) {
+    const isMobile = window.matchMedia("(max-width: 900px)");
+    if (prefersReduced.matches || isMobile.matches) {
       return;
     }
 
     const flowers = Array.from(
       element.querySelectorAll<HTMLImageElement>(".flower")
     );
-    const segment = 420;
-    const cycle = segment * Math.max(flowers.length, 1);
     let rafId = 0;
     const update = () => {
       rafId = 0;
       const scrollY = window.scrollY;
+      const count = Math.max(flowers.length, 1);
+      const segment = window.innerHeight / count;
+      const cycle = segment * count * 2;
       const looped = cycle ? scrollY % cycle : scrollY;
+      const step = Math.floor(looped / segment);
+      const progress = segment ? (looped - step * segment) / segment : 0;
+      const orderIndex =
+        step < count ? step : Math.max(0, 2 * count - 1 - step);
       flowers.forEach((flower, index) => {
-        const start = index * segment;
-        const progress = Math.min(Math.max((looped - start) / segment, 0), 1);
-        const rotation = progress * 360;
+        const rotation = index === orderIndex ? progress * 360 : 0;
         flower.style.setProperty("--flower-rotate", `${rotation}deg`);
       });
     };
