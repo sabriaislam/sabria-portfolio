@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import Link from "next/link";
 import { Inter } from "next/font/google";
 import FlowerCluster from "./components/FlowerCluster";
@@ -13,6 +14,9 @@ const inter = Inter({
 export const metadata: Metadata = {
   title: "Sabria Islam | Designer",
   description: "Aspiring designer in K-12 edtech with case studies and media.",
+  icons: {
+    icon: "/Blue.svg",
+  },
 };
 
 export default function RootLayout({
@@ -28,21 +32,25 @@ export default function RootLayout({
         <div className="page-wrap">
           <div className="site-shell">
             <aside className="site-nav">
-              <Link
-                href="/"
-                className="display text-2xl font-bold text-center"
-              >
-                SABRIA ISLAM
+              <Link href="/" className="nav-logo">
+                <Image
+                  src="/sab-logo.svg"
+                  alt="Sabria Islam"
+                  width={180}
+                  height={64}
+                  priority
+                />
               </Link>
-              <nav className="flex flex-col gap-3 text-sm font-medium">
+              <FlowerCluster />
+              <nav className="flex flex-col gap-1 text-3xl font-semi`bold">
                 <Link href="/" className="chip nav-link">
-                  Work
+                  WORK
                 </Link>
                 <Link href="/media" className="chip nav-link">
-                  Media
+                  MEDIA
                 </Link>
                 <Link href="/about" className="chip nav-link">
-                  About
+                  ABOUT
                 </Link>
                 <a
                   className="chip nav-link"
@@ -50,10 +58,9 @@ export default function RootLayout({
                   target="_blank"
                   rel="noreferrer"
                 >
-                  Resume
+                  RESUME
                 </a>
               </nav>
-              <FlowerCluster />
             </aside>
             <main className="site-content">{children}</main>
           </div>

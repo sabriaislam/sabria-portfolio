@@ -30,7 +30,7 @@ body {
 
 .site-shell {
   display: grid;
-  grid-template-columns: 240px minmax(0, 1fr);
+  grid-template-columns: 280px minmax(0, 1fr);
   gap: 32px;
   max-width: 1280px;
   margin: 0 auto;
@@ -49,6 +49,16 @@ body {
   background: transparent;
   border: 1px solid transparent;
   box-shadow: none;
+}
+
+.site-nav nav {
+  align-items: center;
+}
+
+.nav-logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .site-content {
@@ -180,7 +190,7 @@ body {
     align-self: center;
     text-align: center;
     padding: 4px 10px;
-    font-size: 0.78rem;
+    font-size: 1rem;
   }
 }
 
@@ -194,6 +204,26 @@ body {
   padding: 6px 14px;
   font-size: 0.85rem;
   background: transparent;
+}
+
+.site-nav .nav-link {
+  position: relative;
+  isolation: isolate;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-color: transparent;
+  font-size: 1.1rem;
+  padding: 8px 18px;
+  text-align: center;
+  width: fit-content;
+}
+
+.site-nav .nav-link:hover {
+  border-color: solid rgb(82, 82, 82);
+  background: #ffffff;
+  box-shadow: 0 10px 24px rgba(20, 21, 31, 0.08);
+  transform: translateY(-2px);
 }
 
 .card {
