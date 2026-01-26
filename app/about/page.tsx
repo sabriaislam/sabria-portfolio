@@ -5,8 +5,8 @@ export default function AboutPage() {
   return (
     <div className="space-y-12">
       <section className="surface bg-white/80 p-10 shadow-[0_20px_60px_rgba(17,17,24,0.08)]">
-        <div className="flex flex-col gap-8 md:flex-row md:items-center md:justify-between">
-          <div className="space-y-4 md:w-1/2">
+        <div className="flex flex-col gap-8 md:flex-row md:items-center">
+          <div className="space-y-4 md:basis-3/5">
           <h1 className="display text-4xl md:text-5xl font-semibold">
             Hello!   
           </h1>
@@ -42,13 +42,32 @@ export default function AboutPage() {
             conduct and analyze interviews, and contribute to learning science research papers.
           </p>
           </div>
-          <div className="nav-about-badge md:w-1/2 md:mx-auto">
-            <Image
-              src="/sab-design-lab.png"
-              alt="Sabria in front of 3d printers in the design lab"
-              width={600}
-              height={200}
-            />
+          <div className="md:basis-2/5 flex flex-col space-y-6">
+            <figure className="about-photo">
+              <Image
+                src="/sab-design-lab.png"
+                alt="Sabria in front of 3d printers in the design lab"
+                width={600}
+                height={200}
+                className="about-photo__image"
+              />
+              <figcaption className="about-photo__caption">
+                This is me in the IDM design lab!
+              </figcaption>
+            </figure>
+            <figure className="about-photo">
+              <Image
+                src="/Research-Exhibition.jpg"
+                alt="Presenting at the 2025 NYU Tandon Research Excellence Exhibit"
+                width={600}
+                height={200}
+                className="about-photo__image"
+              />
+              <figcaption className="about-photo__caption">
+                Presenting to the judges at the 2025 NYU Tandon Research
+                Excellence Exhibit!
+              </figcaption>
+            </figure>
           </div>
         </div>
       </section>
