@@ -1,14 +1,36 @@
+"use client";
+
+import { useEffect, useState } from "react";
+
 const mediaSections = [
   {
     title: "Graphic Design",
     description: "Posters, classroom visuals, and bold typography studies.",
     items: [
-      "Student art exhibition poster",
-      "Workshop flyer series",
-      "Social work career fair",
-      "Interviewing panel promo",
-      "Fireside chat invite",
-      "Orientation call to action",
+      {
+        label: "Call for Student Volunteers @ Orientation",
+        src: "/graphics/Call for Student Volunteers @ Orientation.png",
+      },
+      {
+        label: "Fireside Chat",
+        src: "/graphics/Fireside Chat.png",
+      },
+      {
+        label: "Job Opportunities",
+        src: "/graphics/Job Opportunities.png",
+      },
+      {
+        label: "Silver Art Exhibit 2024  Conversations",
+        src: "/graphics/Silver Art Exhibit 2024  Conversations.png",
+      },
+      {
+        label: "Wasserman@Silver Navigating the Social Work Career Fair",
+        src: "/graphics/Wasserman@Silver Navigating the Social Work Career Fair.png",
+      },
+      {
+        label: "Praxis 2 Power with location",
+        src: "/graphics/praxis 2 power with location_.png",
+      },
     ],
   },
   {
@@ -64,6 +86,20 @@ const mediaSections = [
 const colorClasses = ["pink", "blue", "green", "yellow", "purple", "orange"];
 
 export default function MediaPage() {
+  const [activeImage, setActiveImage] = useState<{
+    src: string;
+    label: string;
+  } | null>(null);
+
+  useEffect(() => {
+    if (!activeImage) return;
+    const handleKeyDown = (event: KeyboardEvent) => {
+      if (event.key === "Escape") setActiveImage(null);
+    };
+    window.addEventListener("keydown", handleKeyDown);
+    return () => window.removeEventListener("keydown", handleKeyDown);
+  }, [activeImage]);
+
   return (
     <div className="space-y-12 pb-12">
       <section className="space-y-4">
@@ -87,18 +123,25 @@ export default function MediaPage() {
               <div className="media-section-hero" aria-hidden="true" />
               <div className="media-grid">
                 {section.items.map((item, index) => {
-                  const colorClass = colorClasses[index % colorClasses.length];
                   const sizeClass =
                     index % 5 === 0 ? "tall" : index % 3 === 0 ? "wide" : "";
+                  const label = typeof item === "string" ? item : item.label;
+                  const src = typeof item === "string" ? null : item.src;
                   return (
-                    <article key={item} className="media-tile">
-                      <div
-                        className={`media-art ${colorClass} ${sizeClass}`.trim()}
-                      >
-                        media
-                      </div>
-                      <div className="media-caption">{item}</div>
-                    </article>
+                    <div key={label} className={`media-art ${sizeClass}`.trim()}>
+                      {src ? (
+                        <button
+                          type="button"
+                          className="media-thumb"
+                          onClick={() => setActiveImage({ src, label })}
+                          aria-label={`Expand ${label}`}
+                        >
+                          <img src={src} alt={label} loading="lazy" />
+                        </button>
+                      ) : (
+                        "media"
+                      )}
+                    </div>
                   );
                 })}
               </div>
@@ -106,6 +149,37 @@ export default function MediaPage() {
           </section>
         ))}
       </div>
+
+      {activeImage ? (
+        <div className="media-lightbox" role="dialog" aria-modal="true">
+          <button
+            type="button"
+            className="media-lightbox-backdrop"
+            aria-label="Close expanded image"
+            onClick={() => setActiveImage(null)}
+          />
+          <figure className="media-lightbox-content">
+            <div className="media-lightbox-header">
+              <button
+                type="button"
+                className="media-lightbox-close"
+                aria-label="Close expanded image"
+                onClick={() => setActiveImage(null)}
+              >
+                ×
+              </button>
+            </div>
+            <button
+              type="button"
+              className="media-lightbox-image"
+              aria-label="Close expanded image"
+              onClick={() => setActiveImage(null)}
+            >
+              <img src={activeImage.src} alt={activeImage.label} />
+            </button>
+          </figure>
+        </div>
+      ) : null}
 
       <section className="card flex flex-col gap-4 p-6 md:flex-row md:items-center md:justify-between">
         <div>
