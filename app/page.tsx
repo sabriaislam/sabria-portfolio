@@ -1,25 +1,6 @@
-const caseStudies = [
-  {
-    title: "Playful Math Pathways",
-    focus: "K-5 curriculum redesign",
-    tags: ["Curriculum", "UX", "Prototype"],
-  },
-  {
-    title: "Kindness Quest",
-    focus: "SEL game-based learning",
-    tags: ["Game Design", "Story", "Illustration"],
-  },
-  {
-    title: "Brightline Teacher Hub",
-    focus: "Resource discovery experience",
-    tags: ["Research", "UI", "Content"],
-  },
-  {
-    title: "Science Studio",
-    focus: "Hands-on lab kits",
-    tags: ["Physical", "Brand", "Packaging"],
-  },
-];
+import Link from "next/link";
+
+import { caseStudies } from "./case-studies/data";
 
 export default function Home() {
   return (
@@ -57,18 +38,24 @@ export default function Home() {
         <div className="grid gap-6 md:grid-cols-2">
           {caseStudies.map((study) => (
             <article key={study.title} className="card space-y-4 p-6">
-              <div className="placeholder h-40 w-full" />
-              <div className="space-y-2">
-                <h3 className="display text-2xl">{study.title}</h3>
-                <p className="text-sm text-[#4b5163]">{study.focus}</p>
-                <div className="flex flex-wrap gap-2">
-                  {study.tags.map((tag) => (
-                    <span key={tag} className="chip">
-                      {tag}
-                    </span>
-                  ))}
+              <Link
+                href={`/case-studies/${study.slug}`}
+                className="block space-y-4"
+                aria-label={`Open case study: ${study.title}`}
+              >
+                <div className="case-thumb placeholder w-full" />
+                <div className="space-y-2">
+                  <h3 className="display text-2xl">{study.title}</h3>
+                  <p className="text-sm text-[#4b5163]">{study.focus}</p>
+                  <div className="flex flex-wrap gap-2">
+                    {study.tags.map((tag) => (
+                      <span key={tag} className="chip">
+                        {tag}
+                      </span>
+                    ))}
+                  </div>
                 </div>
-              </div>
+              </Link>
             </article>
           ))}
         </div>

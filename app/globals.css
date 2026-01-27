@@ -9,6 +9,12 @@
   --accent-yellow: #f5c251;
   --accent-green: #4ab969;
   --accent-orange: #b9654a;
+  --merch-1: url("/merch/1.png");
+  --merch-10: url("/merch/10.png");
+  --merch-11: url("/merch/11.png");
+  --merch-img-9171: url("/merch/IMG_9171.jpg");
+  --merch-img-9173: url("/merch/IMG_9173.jpg");
+  --merch-photobooth-pic: url("/merch/photobooth pic.png");
 }
 
 @theme inline {
@@ -198,6 +204,41 @@ body {
   font-family: var(--font-display), serif;
 }
 
+.bg-merch-1,
+.bg-merch-10,
+.bg-merch-11,
+.bg-merch-img-9171,
+.bg-merch-img-9173,
+.bg-merch-photobooth-pic {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.bg-merch-1 {
+  background-image: var(--merch-1);
+}
+
+.bg-merch-10 {
+  background-image: var(--merch-10);
+}
+
+.bg-merch-11 {
+  background-image: var(--merch-11);
+}
+
+.bg-merch-img-9171 {
+  background-image: var(--merch-img-9171);
+}
+
+.bg-merch-img-9173 {
+  background-image: var(--merch-img-9173);
+}
+
+.bg-merch-photobooth-pic {
+  background-image: var(--merch-photobooth-pic);
+}
+
 .chip {
   border: 1px solid rgba(17, 17, 24, 0.12);
   border-radius: 999px;
@@ -228,15 +269,19 @@ body {
 
 .about-photo {
   width: 100%;
+  max-width: 420px;
   border: 0;
   border-radius: 0;
-  background: transparent;
-  box-shadow: 0 10px 24px rgba(20, 21, 31, 0.08);
   overflow: hidden;
-  padding: 0;
+  padding: 12px;
   display: flex;
   flex-direction: column;
   gap: 10px;
+  margin: 0 auto;
+}
+
+.about-photo-stack {
+  align-self: center;
 }
 
 .about-photo__image {
@@ -248,8 +293,8 @@ body {
 }
 
 .about-photo__caption {
-  padding: 0 6px 4px;
-  font-size: 1.05rem;
+  padding: 4px 10px 6px;
+  font-size: 0.95rem;
   line-height: 1.2;
   font-weight: 400;
   color: rgba(20, 21, 31, 0.9);
@@ -282,6 +327,11 @@ body {
     rgba(74, 185, 105, 0.18)
   );
   border: 1px dashed rgba(17, 17, 24, 0.1);
+}
+
+.case-thumb {
+  aspect-ratio: 4 / 3;
+  min-height: 200px;
 }
 
 .media-wrapper {
@@ -317,6 +367,12 @@ body {
   align-items: start;
 }
 
+@media (min-width: 900px) {
+  .media-grid--videos {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
 @media (max-width: 1024px) {
   .media-grid {
     grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -325,6 +381,10 @@ body {
 
 @media (max-width: 720px) {
   .media-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .media-grid--videos {
     grid-template-columns: 1fr;
   }
 }
@@ -358,6 +418,13 @@ body {
   width: 100%;
   max-width: 100%;
   object-fit: contain;
+  display: block;
+}
+
+.media-video {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  border: 0;
   display: block;
 }
 

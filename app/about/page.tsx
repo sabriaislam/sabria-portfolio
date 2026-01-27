@@ -25,12 +25,10 @@ export default function AboutPage() {
           <p className="about-copy text-[1.05rem] leading-[1.2] text-[#4b5163]">
             I&apos;m Sabria, an interdisciplinary designer pursuing an accelerated BS/MS at NYU,
             with a BS in Integrated Design and Media and an MS in Emerging Technologies. 
-            In short, I am interested in digital design and its ability to influence how we learn,
+            <br></br><br></br>
+            In short, I&apos;m interested in digital design and its ability to influence how we learn,
             interact, and build the future. <br></br><br></br>
-            My passions are guided by curiosity and creativity—traits that emerged early in my life,
-            something my mother likes reminds everyone at every Bengali <i>daawat</i> by mentioning that 
-            I used to chew on crayons while drawing.<br></br><br></br>
-            As I grew up, my curiosity led me across multiple design disciplines. 
+            My passions are guided by curiosity and creativity, which led me across multiple design disciplines throughout my career. 
             I began as a visual designer working on brand design, posters, zines, and merchandise, 
             and later expanded into storytelling through photo and video editing, 3D modeling, and motion capture. 
             <br></br><br></br>
@@ -42,7 +40,7 @@ export default function AboutPage() {
             conduct and analyze interviews, and contribute to learning science research papers.
           </p>
           </div>
-          <div className="md:basis-2/5 flex flex-col space-y-6">
+          <div className="about-photo-stack md:basis-2/5 flex flex-col space-y-10">
             <figure className="about-photo">
               <Image
                 src="/sab-design-lab.png"
