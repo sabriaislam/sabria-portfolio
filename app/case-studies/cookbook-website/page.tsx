@@ -40,12 +40,7 @@ export default function CreativeComputingCookbookPage() {
           Project Brief
         </h2>
         <p className="text-sm text-[#4b5163]">
-          We collaborated with community partners Stem From Dance (SFD) and
-          Community Word Project (CWP) to develop the Creative Computing
-          Cookbook, an online resource hub for middle to high school students.
-          It includes foundational content about physical computing components
-          and breakdowns of past projects to help novices explore the
-          intersection of art and physical computing.
+          We collaborated with community partners <i>Stem From Dance</i> (SFD) and <i>Community Word Project</i> (CWP) to develop the <i>Creative Computing Cookbook</i>, an online resource hub for middle and high school students. The platform provides foundational content on physical computing components alongside structured breakdowns of past projects, helping novice programmers explore the intersection of art and technology through guided examples.
         </p>
       </section>
 
@@ -57,6 +52,24 @@ export default function CreativeComputingCookbookPage() {
           <li>
             How can we account for overlapping content and users across partner
             programs?
+            <div className="mt-3 grid gap-3 md:grid-cols-2">
+              <div className="rounded-xl border border-[#d9dee8] bg-[#f7f9fc] p-4">
+                <p className="text-sm font-semibold text-[#111118]">Community Word Project</p>
+                <ul className="mt-2 list-disc space-y-1 pl-5 text-sm text-[#4b5163]">
+                  <li>Works with high schoolers</li>
+                  <li>Adapted Arduino Nano Every</li>
+                  <li>Arduino IDE</li>
+                </ul>
+              </div>
+              <div className="rounded-xl border border-[#d9dee8] bg-[#f7f9fc] p-4">
+                <p className="text-sm font-semibold text-[#111118]">Stem From Dance</p>
+                <ul className="mt-2 list-disc space-y-1 pl-5 text-sm text-[#4b5163]">
+                  <li>Works with late elementary and middle schoolers</li>
+                  <li>Adapted Adafruit Trinket</li>
+                  <li>Microsoft MakeCode</li>
+                </ul>
+              </div>
+            </div>
           </li>
           <li>
             How can we support learners in exploring the intersection between

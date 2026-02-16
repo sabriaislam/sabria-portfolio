@@ -16,13 +16,13 @@ export const caseStudies: CaseStudy[] = [
     slug: "cookbook-website",
     title: "Creative Computing Cookbook",
     thumbnail: "/thumbnails/cookbook.png",
-    focus: "Online STEM resource hub for middle & high school students",
+    focus: "K-12 STEM Education",
     summary:
-      "An educational resource hub for learning physical computing concepts and exploring project inspiration",
+      "A platform for learning physical computing fundamentals and discovering creative computing projects",
     tags: ["UX", "Web", "Content"],
-    timeline: "12 weeks",
-    roles: ["Product Designer", "Educational Content Creator"],
-    skills: ["UX research", "Prototyping", "Content writing"],
+    timeline: "6 months",
+    roles: ["Product Designer", "Educational Content Creator", "Interviewer"],
+    skills: ["UX research", "Prototyping", "Content writing","Video Editing"],
     tools: ["Figma", "Adobe Premiere Pro"],
   },
   {
