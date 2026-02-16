@@ -43,7 +43,13 @@ export default function Home() {
                 className="block space-y-4"
                 aria-label={`Open case study: ${study.title}`}
               >
-                <div className="case-thumb placeholder w-full" />
+                <div className="case-thumb w-full overflow-hidden">
+                  <img
+                    src={study.thumbnail}
+                    alt={`${study.title} thumbnail`}
+                    className="h-full w-full object-cover"
+                  />
+                </div>
                 <div className="space-y-2">
                   <h3 className="display text-2xl">{study.title}</h3>
                   <p className="text-sm text-[#4b5163]">{study.focus}</p>

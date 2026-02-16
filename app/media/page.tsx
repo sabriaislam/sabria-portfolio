@@ -65,22 +65,22 @@ const mediaSections = [
     title: "Video Editing",
     items: [
       {
-        label: "Lesson teaser trailer",
-        src: "https://www.youtube.com/embed/i9zOjkF85dA",
+        label: "Motion Capure Final",
+        src: "https://youtu.be/J9Woy2qrcvc?si=b3Nvp9gtJOPlFnb5",
         kind: "video",
       },
       {
-        label: "Educator spotlight edit",
+        label: "Guacamole Recipe with HeartShare member",
         src: "https://www.youtube.com/embed/8fhsl3Amgfc",
         kind: "video",
       },
       {
-        label: "Student showcase reel",
-        src: "https://www.youtube.com/embed/FyzBL2Ch-RY",
+        label: "Music Video",
+        src: "https://www.youtube.com/embed/i9zOjkF85dA",
         kind: "video",
       },
       {
-        label: "Motion title sequence",
+        label: "Still and Moving Images Final",
         src: "https://www.youtube.com/embed/dZ4U_OKvbus",
         kind: "video",
       },

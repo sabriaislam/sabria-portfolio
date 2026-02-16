@@ -6,7 +6,7 @@ import CaseStudyMetaCard from "../components/CaseStudyMetaCard";
 
 const study = caseStudies.find((entry) => entry.slug === "nyu-silver-icon-redesign");
 
-export default function KindnessQuestPage() {
+export default function NyuSilverIconRedesignPage() {
   if (!study) return null;
 
   return (

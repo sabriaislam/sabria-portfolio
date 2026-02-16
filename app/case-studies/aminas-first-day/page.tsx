@@ -6,7 +6,7 @@ import CaseStudyMetaCard from "../components/CaseStudyMetaCard";
 
 const study = caseStudies.find((entry) => entry.slug === "aminas-first-day");
 
-export default function ScienceStudioPage() {
+export default function AminasFirstDayPage() {
   if (!study) return null;
 
   return (

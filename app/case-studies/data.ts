@@ -1,6 +1,7 @@
 export type CaseStudy = {
   slug: string;
   title: string;
+  thumbnail: string;
   focus: string;
   summary: string;
   tags: string[];
@@ -12,75 +13,55 @@ export type CaseStudy = {
 
 export const caseStudies: CaseStudy[] = [
   {
-    slug: "adapt-accessible-fashion",
-    title: "ADAPT Accessible Fashion",
-    focus: "K-5 curriculum redesign",
+    slug: "cookbook-website",
+    title: "Creative Computing Cookboook",
+    thumbnail: "/thumbnails/cookbook.png",
+    focus: "Online STEM resource hub for middle & high school students",
     summary:
-      "A playful set of math pathways that help students explore ideas through movement, stories, and quick wins.",
-    tags: ["Curriculum", "UX", "Prototype"],
-    timeline: "10 weeks",
-    roles: ["Product Designer", "Learning Designer"],
-    skills: ["Curriculum design", "Prototyping", "Usability testing"],
-    tools: ["Figma", "FigJam", "Google Slides"],
+      "An educational resource hub for learning physical computing concepts and exploring project inspiration",
+    tags: ["UX", "Web", "Content"],
+    timeline: "12 weeks",
+    roles: ["Product Designer", "Educational Content Creator"],
+    skills: ["UX research", "Prototyping", "Content writing"],
+    tools: ["Figma", "Adobe Premiere Pro"],
   },
   {
     slug: "aminas-first-day",
     title: "Amina's First Day",
-    focus: "SEL game-based learning",
+    thumbnail: "/thumbnails/amina.png",
+    focus: "Emotion-aware storytelling for empathy and cultural learning",
     summary:
-      "A game-driven SEL experience that turns classroom rituals into quests, rewards, and collaborative reflection.",
-    tags: ["Game Design", "Story", "Illustration"],
+      "Amina’s First Day is an interactive digital storybook that uses affective computing to help young students recognize emotions, build empathy, and engage with social-emotional learning through culturally grounded storytelling.",
+    tags: ["Story", "Facial Detection", "JavaScript"],
     timeline: "8 weeks",
     roles: ["Experience Designer", "Illustrator"],
     skills: ["Game mechanics", "Narrative design", "Visual design"],
     tools: ["Figma", "Procreate", "After Effects"],
   },
   {
-    slug: "nyu-silver-icon-redesign",
-    title: "NYU Silver Icon Redesign",
-    focus: "Resource discovery experience",
+    slug: "adapt-accessible-fashion",
+    title: "ADAPT Accessible Fashion",
+    thumbnail: "/thumbnails/adapt.png",
+    focus: "Co-designed adaptive costumes for theater performance",
     summary:
-      "A teacher-facing hub that reduces search fatigue and surfaces the right lesson assets at the right moment.",
-    tags: ["Research", "UI", "Content"],
-    timeline: "12 weeks",
-    roles: ["UX Researcher", "UI Designer"],
-    skills: ["Interviews", "Information architecture", "Design systems"],
-    tools: ["Figma", "Notion", "Miro"],
+      "Co-create an accessible costume garment for an actor with physical disability",
+    tags: ["Accessibility", "Sustainability", "Textile"],
+    timeline: "10 weeks",
+    roles: ["Product Designer", "Learning Designer"],
+    skills: ["Sewing", "Prototyping", "Usability testing"],
+    tools: ["Upcycle materials", "sewable magnets"],
   },
   {
-    slug: "seven-to-eleven",
-    title: "Seven to Eleven",
-    focus: "Hands-on lab kits",
+    slug: "silver-core-values",
+    title: "Silver Core Values",
+    thumbnail: "/thumbnails/silver.png",
+    focus: "Values storytelling and brand system",
     summary:
-      "A kit system that blends tactile experiments with clear facilitation cues so science feels inviting, not intimidating.",
-    tags: ["Physical", "Brand", "Packaging"],
-    timeline: "6 weeks",
-    roles: ["Brand Designer", "Packaging Designer"],
-    skills: ["Brand strategy", "Print design", "Prototyping"],
-    tools: ["Illustrator", "Photoshop", "InDesign"],
-  },
-  {
-    slug: "dbms-airline-system",
-    title: "DBMS Airline System",
-    focus: "Video-first learning moments",
-    summary:
-      "Short-form video experiments designed to hook attention in the first five seconds, then transition into active practice.",
-    tags: ["Video", "Motion", "Story"],
-    timeline: "7 weeks",
-    roles: ["Creative Director", "Video Editor"],
-    skills: ["Storyboarding", "Editing", "Motion design"],
-    tools: ["Premiere Pro", "After Effects", "Audition"],
-  },
-  {
-    slug: "van-alen-public-art-map-installation",
-    title: "Van Alen | Public Art Map Installation",
-    focus: "UX system for learning signals",
-    summary:
-      "A UX framework that helps educators notice patterns in student progress without turning classrooms into dashboards.",
-    tags: ["UX", "Systems", "Research"],
-    timeline: "9 weeks",
-    roles: ["Product Designer", "Research Lead"],
-    skills: ["Service mapping", "Prototyping", "Facilitation"],
-    tools: ["Figma", "FigJam", "Notion"],
+      "Redesigned NYU Silver's core icons to better reflect school's values",
+    tags: ["Branding", "Graphic Design"],
+    timeline: "3 weeks",
+    roles: ["Brand Designer", "Art Director"],
+    skills: ["Visual systems", "Workshop facilitation", "Design direction"],
+    tools: ["Adobe Illustrator", "Canva"],
   },
 ];

@@ -528,3 +528,153 @@ body {
     animation: none;
   }
 }
+
+.cookbook-case-study .case-reveal {
+  opacity: 0;
+  transform: translateY(10px);
+  animation: case-reveal-up 520ms cubic-bezier(0.22, 1, 0.36, 1) forwards;
+  will-change: transform, opacity;
+}
+
+.cookbook-case-study h1.display {
+  font-weight: 800;
+  color: #4a9eb9;
+}
+
+.cookbook-case-study .case-heading {
+  font-weight: 800;
+}
+
+.cookbook-case-study .case-heading-green {
+  color: #4ab969;
+}
+
+.cookbook-case-study .case-heading-rust {
+  color: #b9654a;
+}
+
+.cookbook-case-study .case-heading-blue {
+  color: #4a9eb9;
+}
+
+.cookbook-case-study .case-heading-pink {
+  color: #b94a79;
+}
+
+.cookbook-case-study .delay-1 {
+  animation-delay: 40ms;
+}
+
+.cookbook-case-study .delay-2 {
+  animation-delay: 90ms;
+}
+
+.cookbook-case-study .delay-3 {
+  animation-delay: 130ms;
+}
+
+.cookbook-case-study .delay-4 {
+  animation-delay: 170ms;
+}
+
+.cookbook-case-study .delay-5 {
+  animation-delay: 210ms;
+}
+
+.cookbook-case-study .delay-6 {
+  animation-delay: 250ms;
+}
+
+.cookbook-case-study .delay-7 {
+  animation-delay: 290ms;
+}
+
+.cookbook-case-study .delay-8 {
+  animation-delay: 330ms;
+}
+
+.cookbook-case-study .delay-9 {
+  animation-delay: 370ms;
+}
+
+.cookbook-case-study .delay-10 {
+  animation-delay: 410ms;
+}
+
+.cookbook-case-study .delay-11 {
+  animation-delay: 450ms;
+}
+
+.cookbook-case-study .delay-12 {
+  animation-delay: 490ms;
+}
+
+.cookbook-case-study .card {
+  transition: transform 220ms ease, box-shadow 220ms ease;
+}
+
+.cookbook-case-study .card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 24px 68px rgba(17, 17, 24, 0.1);
+}
+
+.cookbook-case-study .case-placeholder {
+  position: relative;
+  overflow: hidden;
+}
+
+.cookbook-case-study .case-placeholder::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    110deg,
+    transparent 0%,
+    rgba(255, 255, 255, 0.42) 45%,
+    transparent 100%
+  );
+  transform: translateX(-100%);
+  animation: case-sheen 2.8s ease-in-out infinite;
+  pointer-events: none;
+}
+
+@keyframes case-reveal-up {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes case-sheen {
+  0% {
+    transform: translateX(-100%);
+  }
+  40%,
+  100% {
+    transform: translateX(120%);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .cookbook-case-study .case-reveal {
+    opacity: 1;
+    transform: none;
+    animation: none;
+  }
+
+  .cookbook-case-study .card {
+    transition: none;
+  }
+
+  .cookbook-case-study .card:hover {
+    transform: none;
+  }
+
+  .cookbook-case-study .case-placeholder::after {
+    animation: none;
+  }
+}

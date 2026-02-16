@@ -6,7 +6,7 @@ import CaseStudyMetaCard from "../components/CaseStudyMetaCard";
 
 const study = caseStudies.find((entry) => entry.slug === "adapt-accessible-fashion");
 
-export default function PlayfulMathPathwaysPage() {
+export default function AdaptAccessibleFashionPage() {
   if (!study) return null;
 
   return (
