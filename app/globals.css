@@ -538,11 +538,11 @@ body {
 
 .cookbook-case-study h1.display {
   font-weight: 800;
-  color: #4a9eb9;
+  color: black;
 }
 
 .cookbook-case-study .case-heading {
-  font-weight: 800;
+  font-weight: 700;
 }
 
 .cookbook-case-study .case-heading-green {
@@ -559,6 +559,10 @@ body {
 
 .cookbook-case-study .case-heading-pink {
   color: #b94a79;
+}
+
+.cookbook-case-study .case-heading-black {
+  color: #111118;
 }
 
 .cookbook-case-study .delay-1 {

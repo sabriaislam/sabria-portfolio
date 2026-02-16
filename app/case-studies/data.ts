@@ -14,7 +14,7 @@ export type CaseStudy = {
 export const caseStudies: CaseStudy[] = [
   {
     slug: "cookbook-website",
-    title: "Creative Computing Cookboook",
+    title: "Creative Computing Cookbook",
     thumbnail: "/thumbnails/cookbook.png",
     focus: "Online STEM resource hub for middle & high school students",
     summary:

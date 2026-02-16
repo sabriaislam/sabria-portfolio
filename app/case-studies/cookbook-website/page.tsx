@@ -6,7 +6,7 @@ import CaseStudyMetaCard from "../components/CaseStudyMetaCard";
 
 const study = caseStudies.find((entry) => entry.slug === "cookbook-website");
 
-export default function CreativeComputingCookboookPage() {
+export default function CreativeComputingCookbookPage() {
   if (!study) return null;
 
   return (
@@ -36,7 +36,7 @@ export default function CreativeComputingCookboookPage() {
       </div>
 
       <section className="case-reveal delay-4 card space-y-4 p-6">
-        <h2 className="case-heading case-heading-green display text-2xl">
+        <h2 className="case-heading case-heading-black display text-2xl">
           Project Brief
         </h2>
         <p className="text-sm text-[#4b5163]">
@@ -50,7 +50,7 @@ export default function CreativeComputingCookboookPage() {
       </section>
 
       <section className="case-reveal delay-5 card space-y-4 p-6">
-        <h2 className="case-heading case-heading-rust display text-2xl">
+        <h2 className="case-heading case-heading-black display text-2xl">
           Considerations
         </h2>
         <ol className="list-decimal space-y-1 pl-5 text-sm text-[#4b5163]">
@@ -71,7 +71,7 @@ export default function CreativeComputingCookboookPage() {
       </section>
 
       <section className="case-reveal delay-6 card space-y-4 p-6">
-        <h2 className="case-heading case-heading-blue display text-2xl">
+        <h2 className="case-heading case-heading-black display text-2xl">
           User Research
         </h2>
         <p className="text-sm text-[#4b5163]">
@@ -84,7 +84,7 @@ export default function CreativeComputingCookboookPage() {
       </section>
 
       <section className="case-reveal delay-7 card space-y-4 p-6">
-        <h2 className="case-heading case-heading-pink display text-2xl">
+        <h2 className="case-heading case-heading-black display text-2xl">
           Key Findings
         </h2>
         <ol className="list-decimal space-y-1 pl-5 text-sm text-[#4b5163]">
@@ -100,7 +100,7 @@ export default function CreativeComputingCookboookPage() {
       </section>
 
       <section className="case-reveal delay-8 card space-y-4 p-6">
-        <h2 className="case-heading case-heading-green display text-2xl">
+        <h2 className="case-heading case-heading-blue display text-2xl">
           Worked Examples in Creative Computing
         </h2>
         <p className="text-sm text-[#4b5163]">
@@ -115,7 +115,7 @@ export default function CreativeComputingCookboookPage() {
       </section>
 
       <section className="case-reveal delay-9 card space-y-4 p-6">
-        <h2 className="case-heading case-heading-rust display text-2xl">
+        <h2 className="case-heading case-heading-green display text-2xl">
           Content Development
         </h2>
         <p className="text-sm text-[#4b5163]">
@@ -133,7 +133,7 @@ export default function CreativeComputingCookboookPage() {
       </section>
 
       <section className="case-reveal delay-10 card space-y-4 p-6">
-        <h2 className="case-heading case-heading-blue display text-2xl">
+        <h2 className="case-heading case-heading-pink display text-2xl">
           Solution
         </h2>
         <div className="case-placeholder rounded-xl border border-dashed border-[#cfd4df] bg-[#f7f8fb] p-4 text-sm text-[#4b5163]">
@@ -149,7 +149,7 @@ export default function CreativeComputingCookboookPage() {
       </section>
 
       <section className="case-reveal delay-11 card space-y-4 p-6">
-        <h2 className="case-heading case-heading-pink display text-2xl">
+        <h2 className="case-heading case-heading-rust display text-2xl">
           Impact
         </h2>
         <p className="text-sm text-[#4b5163]">
@@ -160,7 +160,7 @@ export default function CreativeComputingCookboookPage() {
       </section>
 
       <section className="case-reveal delay-12 card space-y-4 p-6">
-        <h2 className="case-heading case-heading-green display text-2xl">
+        <h2 className="case-heading case-heading-black display text-2xl">
           Next Steps
         </h2>
         <p className="text-sm text-[#4b5163]">
