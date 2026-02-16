@@ -334,6 +334,52 @@ body {
   min-height: 200px;
 }
 
+.home-case-studies .home-case-card {
+  position: relative;
+  overflow: hidden;
+  opacity: 0;
+  transform: translateY(12px);
+  --reveal-delay: 40ms;
+  animation:
+    home-case-reveal 560ms cubic-bezier(0.22, 1, 0.36, 1)
+      var(--reveal-delay) forwards,
+    home-case-breathe 6.4s ease-in-out calc(var(--reveal-delay) + 720ms)
+      infinite;
+  transition: transform 240ms ease, box-shadow 240ms ease;
+  will-change: transform, opacity;
+}
+
+.home-case-studies .home-case-card--1 {
+  --reveal-delay: 40ms;
+}
+
+.home-case-studies .home-case-card--2 {
+  --reveal-delay: 100ms;
+}
+
+.home-case-studies .home-case-card--3 {
+  --reveal-delay: 160ms;
+}
+
+.home-case-studies .home-case-card--4 {
+  --reveal-delay: 220ms;
+}
+
+.home-case-studies .home-case-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 30px 78px rgba(17, 17, 24, 0.13);
+}
+
+.home-case-studies .home-case-image {
+  transform: scale(1);
+  transition: transform 360ms ease;
+  will-change: transform;
+}
+
+.home-case-studies .home-case-link:hover .home-case-image {
+  transform: scale(1.055);
+}
+
 .media-wrapper {
   border: 1px solid rgba(17, 17, 24, 0.08);
   border-radius: 0px;
@@ -653,6 +699,27 @@ body {
   }
 }
 
+@keyframes home-case-reveal {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes home-case-breathe {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-1.5px);
+  }
+}
+
 @keyframes case-sheen {
   0% {
     transform: translateX(-100%);
@@ -664,6 +731,23 @@ body {
 }
 
 @media (prefers-reduced-motion: reduce) {
+  .home-case-studies .home-case-card {
+    opacity: 1;
+    transform: none;
+    animation: none;
+    transition: none;
+  }
+
+  .home-case-studies .home-case-card:hover {
+    transform: none;
+  }
+
+  .home-case-studies .home-case-image,
+  .home-case-studies .home-case-link:hover .home-case-image {
+    transform: none;
+    transition: none;
+  }
+
   .cookbook-case-study .case-reveal {
     opacity: 1;
     transform: none;

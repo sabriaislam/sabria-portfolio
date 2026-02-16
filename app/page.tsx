@@ -25,7 +25,7 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="space-y-6">
+      <section className="home-case-studies space-y-6">
         <div className="flex flex-wrap items-end justify-between gap-4">
           <div>
             <h2 className="display text-3xl">Case Studies</h2>
@@ -36,18 +36,21 @@ export default function Home() {
           <span className="chip">Updated 2024</span>
         </div>
         <div className="grid gap-6 md:grid-cols-2">
-          {caseStudies.map((study) => (
-            <article key={study.title} className="card space-y-4 p-6">
+          {caseStudies.map((study, index) => (
+            <article
+              key={study.title}
+              className={`home-case-card home-case-card--${index + 1} card space-y-4 p-6`}
+            >
               <Link
                 href={`/case-studies/${study.slug}`}
-                className="block space-y-4"
+                className="home-case-link block space-y-4"
                 aria-label={`Open case study: ${study.title}`}
               >
                 <div className="case-thumb w-full overflow-hidden">
                   <img
                     src={study.thumbnail}
                     alt={`${study.title} thumbnail`}
-                    className="h-full w-full object-cover"
+                    className="home-case-image h-full w-full object-cover"
                   />
                 </div>
                 <div className="space-y-2">
