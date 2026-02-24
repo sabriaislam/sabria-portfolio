@@ -218,6 +218,28 @@ export default function CreativeComputingCookbookPage() {
           and learning materials.
         </p>
       </section>
+
+      <section className="case-reveal card space-y-4 p-6">
+        <h2 className="case-heading case-heading-black display text-2xl">
+          References
+        </h2>
+        <ol className="list-decimal space-y-2 pl-5 text-sm text-[#4b5163]">
+          <li>
+            Ayres, Paul, and John Sweller. "Worked examples." In
+            International guide to student achievement, pp. 408-410.
+            Routledge, 2013.
+          </li>
+          <li>
+            Sweller, J., Ayres, P., &amp; Kalyuga, S. (2011). Cognitive load
+            theory. New York: Springer.
+          </li>
+          <li>
+            Rourke, Arianne, and John Sweller. "The worked-example effect
+            using ill-defined problems: Learning to recognise designers'
+            styles." Learning and Instruction 19, no. 2 (2009): 185-199.
+          </li>
+        </ol>
+      </section>
     </div>
   );
 }

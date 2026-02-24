@@ -5,36 +5,18 @@ import { caseStudies } from "./case-studies/data";
 export default function Home() {
   return (
     <div className="space-y-16">
-      <section className="surface grid gap-10 bg-white/70 p-10 shadow-[0_20px_60px_rgba(17,17,24,0.08)] backdrop-blur md:grid-cols-[1.2fr_0.8fr]">
+      <section className="surface grid gap-10 bg-white/70 p-10 shadow-[0_20px_60px_rgba(17,17,24,0.08)] backdrop-blur md:grid-cols-[1.4fr_0.6fr]">
         <div className="space-y-6">
-          <h1 className="display text-4xl leading-tight text-[#111118] md:text-5xl">
-            Building joyful learning moments for curious classrooms.
+          <h1 className="display text-4xl leading-tight text-[#111118] md:text-4xl">
+            Designing inclusive interactive experiences that center emotion, learning, and community.
           </h1>
           <p className="text-lg text-[#4b5163]">
-            I craft playful, research-driven experiences that help students feel
-            brave, teachers feel supported, and learning feel alive.
+            Writing research papers @ Elevate Lab <br></br>
+            Building my senior design project @ 370 Jay
           </p>
-          <div className="flex flex-wrap gap-3">
-            <button className="bg-[#111118] px-6 py-3 text-sm font-semibold text-white">
-              View case studies
-            </button>
-            <button className="border border-[#111118]/15 px-6 py-3 text-sm font-semibold text-[#111118]">
-              Let&apos;s collaborate
-            </button>
-          </div>
         </div>
       </section>
-
       <section className="home-case-studies space-y-6">
-        <div className="flex flex-wrap items-end justify-between gap-4">
-          <div>
-            <h2 className="display text-3xl">Case Studies</h2>
-            <p className="text-[#4b5163]">
-              Four deep dives into design for learning.
-            </p>
-          </div>
-          <span className="chip">Updated 2024</span>
-        </div>
         <div className="grid gap-6 md:grid-cols-2">
           {caseStudies.map((study, index) => (
             <article
@@ -67,27 +49,6 @@ export default function Home() {
               </Link>
             </article>
           ))}
-        </div>
-      </section>
-
-      <section className="grid gap-6 md:grid-cols-[0.8fr_1.2fr]">
-        <div className="card flex flex-col gap-4 p-6">
-          <h3 className="display text-2xl">What I&apos;m exploring</h3>
-          <p className="text-sm text-[#4b5163]">
-            Tactile learning artifacts, teacher-facing dashboards, and short-form
-            student videos that spark curiosity.
-          </p>
-          <div className="flex flex-wrap gap-2">
-            <span className="chip">Playful motion</span>
-            <span className="chip">Story-based learning</span>
-            <span className="chip">Equity in access</span>
-          </div>
-        </div>
-        <div className="card grid gap-4 p-6 md:grid-cols-2">
-          <div className="placeholder h-32" />
-          <div className="placeholder h-32" />
-          <div className="placeholder h-32" />
-          <div className="placeholder h-32" />
         </div>
       </section>
     </div>

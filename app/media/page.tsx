@@ -237,18 +237,6 @@ export default function MediaPage() {
         </div>
       ) : null}
 
-      <section className="card flex flex-col gap-4 p-6 md:flex-row md:items-center md:justify-between">
-        <div>
-          <h3 className="display text-2xl">Media request?</h3>
-          <p className="text-sm text-[#4b5163]">
-            I&apos;m happy to share more process work or collaborate on an
-            education project.
-          </p>
-        </div>
-        <button className="bg-[#14151f] px-6 py-3 text-sm font-semibold text-white">
-          Say hello
-        </button>
-      </section>
     </div>
   );
 }

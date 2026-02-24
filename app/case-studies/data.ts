@@ -29,7 +29,7 @@ export const caseStudies: CaseStudy[] = [
     slug: "aminas-first-day",
     title: "Amina's First Day",
     thumbnail: "/thumbnails/amina.png",
-    focus: "Emotion-aware storytelling for empathy and cultural learning",
+    focus: "Emotion-aware storytelling for cultural learning",
     summary:
       "Amina’s First Day is an interactive digital storybook that uses affective computing to help young students recognize emotions, build empathy, and engage with social-emotional learning through culturally grounded storytelling.",
     tags: ["Story", "Facial Detection", "JavaScript"],
@@ -42,9 +42,9 @@ export const caseStudies: CaseStudy[] = [
     slug: "adapt-accessible-fashion",
     title: "ADAPT Accessible Fashion",
     thumbnail: "/thumbnails/adapt.png",
-    focus: "Co-designed adaptive costumes for theater performance",
+    focus: "Co-design adaptive costumes for theater performances",
     summary:
-      "Co-create an accessible costume garment for an actor with physical disability",
+      "Sew an accessible costume garment for an actor with physical disability",
     tags: ["Accessibility", "Sustainability", "Textile"],
     timeline: "10 weeks",
     roles: ["Product Designer", "Learning Designer"],

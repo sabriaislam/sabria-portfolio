@@ -69,25 +69,6 @@ export default function AboutPage() {
           </div>
         </div>
       </section>
-
-      <section className="grid gap-6 md:grid-cols-[0.8fr_1.2fr]">
-        <div className="card space-y-4 p-6">
-          <h2 className="display text-2xl">My design values</h2>
-          <p className="text-sm text-[#4b5163]">
-            Learning should feel inclusive, brave, and imaginative. I prioritize
-            feedback loops with educators, rapid prototyping with students, and
-            designs that celebrate different ways of understanding.
-          </p>
-        </div>
-        <div className="card space-y-4 p-6">
-          <h3 className="display text-2xl">Currently inspired by</h3>
-          <div className="grid gap-4 md:grid-cols-3">
-            <div className="placeholder h-24" />
-            <div className="placeholder h-24" />
-            <div className="placeholder h-24" />
-          </div>
-        </div>
-      </section>
     </div>
   );
 }

@@ -3,6 +3,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { Inter } from "next/font/google";
 import FlowerCluster from "./components/FlowerCluster";
+import SiteFooter from "./components/SiteFooter";
 import "./globals.css";
 
 const inter = Inter({
@@ -43,7 +44,7 @@ export default function RootLayout({
               </Link>
               <FlowerCluster />
               <nav className="flex flex-col gap-1 text-3xl font-semi`bold">
-                <Link href="/" className="chip nav-link">
+                <Link href="/work" className="chip nav-link">
                   WORK
                 </Link>
                 <Link href="/media" className="chip nav-link">
@@ -54,7 +55,7 @@ export default function RootLayout({
                 </Link>
                 <a
                   className="chip nav-link"
-                  href="#"
+                  href="https://drive.google.com/file/d/1VQBPF30rYE1M-lr9mUYOni7jtOBLoFwE/view?usp=sharing"
                   target="_blank"
                   rel="noreferrer"
                 >
@@ -62,7 +63,10 @@ export default function RootLayout({
                 </a>
               </nav>
             </aside>
-            <main className="site-content">{children}</main>
+            <main className="site-content">
+              {children}
+              <SiteFooter />
+            </main>
           </div>
         </div>
       </body>

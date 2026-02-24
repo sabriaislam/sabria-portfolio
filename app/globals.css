@@ -184,7 +184,6 @@ body {
   }
 
   .site-nav nav {
-    flex-direction: row;
     flex-direction: column;
     align-items: stretch;
     justify-content: flex-start;
@@ -260,13 +259,6 @@ body {
   width: fit-content;
 }
 
-.site-nav .nav-link:hover {
-  border-color: solid rgb(82, 82, 82);
-  background: #ffffff;
-  box-shadow: 0 10px 24px rgba(20, 21, 31, 0.08);
-  transform: translateY(-2px);
-}
-
 .about-photo {
   width: 100%;
   max-width: 420px;
@@ -304,10 +296,6 @@ body {
   font-size: 1rem;
   font-weight: 400;
   color: rgba(20, 21, 31, 0.9);
-  text-align: left;
-}
-
-.about-copy {
   text-align: left;
 }
 
@@ -765,4 +753,31 @@ body {
   .cookbook-case-study .case-placeholder::after {
     animation: none;
   }
+}
+
+.work-archive-carousel {
+  display: grid;
+  grid-auto-flow: column;
+  grid-auto-columns: minmax(320px, 44%);
+  gap: 18px;
+  overflow-x: auto;
+  padding-bottom: 8px;
+  scroll-snap-type: x mandatory;
+  -webkit-overflow-scrolling: touch;
+}
+
+@media (max-width: 900px) {
+  .work-archive-carousel {
+    grid-auto-columns: minmax(280px, 82%);
+  }
+}
+
+.work-archive-slide {
+  scroll-snap-align: start;
+}
+
+.chip--small {
+  padding: 5px 11px;
+  font-size: 0.72rem;
+  line-height: 1.1;
 }
