@@ -156,9 +156,16 @@ export default function MediaPage() {
                     index % 5 === 0 ? "tall" : index % 3 === 0 ? "wide" : "";
                   const label = typeof item === "string" ? item : item.label;
                   const src = typeof item === "string" ? null : item.src;
-                  const link = typeof item === "string" ? null : item.link;
+                  const link =
+                    typeof item === "string"
+                      ? null
+                      : "link" in item
+                        ? item.link
+                        : null;
                   const isVideo =
-                    typeof item === "string" ? false : item.kind === "video";
+                    typeof item === "string"
+                      ? false
+                      : "kind" in item && item.kind === "video";
                   return (
                     <div key={label} className={`media-art ${sizeClass}`.trim()}>
                       {src && isVideo ? (
