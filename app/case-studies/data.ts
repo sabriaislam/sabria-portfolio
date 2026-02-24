@@ -52,7 +52,7 @@ export const caseStudies: CaseStudy[] = [
     tools: ["Upcycle materials", "sewable magnets"],
   },
   {
-    slug: "silver-core-values",
+    slug: "nyu-silver-icon-redesign",
     title: "Silver Core Values",
     thumbnail: "/thumbnails/silver.png",
     focus: "Values storytelling and brand system",

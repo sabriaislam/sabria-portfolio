@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 
 import { caseStudies } from "../data";
 import CaseStudyHeader from "../components/CaseStudyHeader";
@@ -53,18 +54,9 @@ export default function AminasFirstDayPage() {
         </p>
       </section>
 
-      <section className="case-reveal delay-5 card space-y-4 p-6">
-        <h2 className="case-heading case-heading-black display text-2xl">
-          Target User
-        </h2>
-        <ul className="list-disc space-y-1 pl-5 text-sm text-[#4b5163]">
-          <li>2nd-3rd grade students</li>
-        </ul>
-      </section>
-
       <section className="case-reveal delay-6 card space-y-4 p-6">
         <h2 className="case-heading case-heading-black display text-2xl">
-          User Flow
+          Storyline & User Flow
         </h2>
         <p className="text-sm text-[#4b5163]">
           The experience follows Amina, a young Muslim girl navigating her
@@ -77,6 +69,15 @@ export default function AminasFirstDayPage() {
           Based on their responses, the story either continues or pauses for a
           teachable moment, reinforcing empathy and anti-bias learning.
         </p>
+        <figure className="mx-auto w-full max-w-3xl overflow-hidden rounded-xl border border-[#d9dee8] bg-[#f7f9fc] p-2">
+          <Image
+            src="/amina/amina-user-flow.png"
+            alt="Amina user flow diagram"
+            width={1400}
+            height={900}
+            className="h-auto w-full rounded-lg object-cover"
+          />
+        </figure>
       </section>
 
       <section className="case-reveal delay-7 card space-y-4 p-6">
@@ -84,17 +85,19 @@ export default function AminasFirstDayPage() {
           Preliminary Research &amp; Pain Points
         </h2>
         <p className="text-sm text-[#4b5163]">
-          Methods: qualitative interviews with 2 elementary school teachers and
-          3 student teachers.
+          We conducted qualitative interviews with 2 elementary school teachers and
+          3 student teachers and identified 3 main pain points in SEL and cultural learning: 
         </p>
-        <p className="text-sm text-[#4b5163]">
-          Main pain points identified:
-        </p>
-        <ul className="list-disc space-y-1 pl-5 text-sm text-[#4b5163]">
+        <ol className="list-disc space-y-1 pl-5 text-sm text-[#4b5163]">
           <li>Inconsistent or superficial SEL integration</li>
           <li>Limited cultural learning opportunities</li>
           <li>Teacher overload and curriculum constraints</li>
-        </ul>
+        </ol>
+        <p className="text-sm text-[#4b5163]">
+          In response, we designed a prototype of an interactive storybook. The experience was built using p5.js and adapted facial detection software. While the narrative maintained a familiar “next” button for structural clarity, facial expression recognition was embedded as an affective interaction layer. Rather than replacing navigation, the system leveraged children’s emotional responses as a form of participatory input — shaping select narrative moments and reinforcing engagement through embodied feedback.
+          <br></br><br></br>
+          Designed specifically for children ages 6–8, the interface minimized reliance on reading and writing, prioritizing visual communication, intuitive affordances, and developmentally appropriate interaction patterns.
+        </p>
       </section>
 
       <section className="case-reveal delay-8 card space-y-4 p-6">
@@ -105,10 +108,6 @@ export default function AminasFirstDayPage() {
           <li>Built with p5.js and adapted facial detection software</li>
           <li>Story progression controlled by emotional input</li>
           <li>Two interactive emotional decision points in the narrative</li>
-          <li>
-            Designed for children ages 6-8 with minimal reading and writing
-            load
-          </li>
         </ul>
         <p className="text-sm text-[#4b5163]">
           While limited in scope, the prototype demonstrated how affective
@@ -118,10 +117,19 @@ export default function AminasFirstDayPage() {
 
       <section className="case-reveal delay-9 card space-y-4 p-6">
         <h2 className="case-heading case-heading-black display text-2xl">
-          User Flow Diagram
+          Demo
         </h2>
-        <div className="case-placeholder rounded-xl border border-dashed border-[#cfd4df] bg-[#f7f8fb] p-4 text-sm text-[#4b5163]">
-          Image placeholder: userflow.png
+        <div className="mx-auto w-full max-w-3xl overflow-hidden rounded-xl border border-[#d9dee8] bg-[#f7f9fc] p-2">
+          <div className="aspect-video overflow-hidden rounded-lg">
+            <iframe
+              src="https://www.youtube.com/embed/3CNWZtCOaYc"
+              title="Amina's First Day Demo"
+              className="h-full w-full border-0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              referrerPolicy="strict-origin-when-cross-origin"
+              allowFullScreen
+            />
+          </div>
         </div>
       </section>
 

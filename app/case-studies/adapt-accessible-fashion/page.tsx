@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 
 import { caseStudies } from "../data";
 import CaseStudyHeader from "../components/CaseStudyHeader";
@@ -109,7 +110,7 @@ export default function AdaptAccessibleFashionPage() {
           <p>
             <b>Research &amp; Listening:</b> We attended live performances and
             collaborated with the performer and ADAPT staff to understand
-            movement patterns, dressing challenges, and performance context.
+            dressing challenges, performance context, and textile preferences.
           </p>
           <p>
             <b>Co-Design &amp; Prototyping:</b> We tested magnets, Velcro, and
@@ -122,8 +123,36 @@ export default function AdaptAccessibleFashionPage() {
             adaptability.
           </p>
         </div>
-        <div className="case-placeholder rounded-xl border border-dashed border-[#cfd4df] bg-[#f7f8fb] p-4 text-sm text-[#4b5163]">
-          Image placeholder: research, prototyping, and material exploration
+        <div className="mx-auto grid w-full max-w-4xl gap-4 md:grid-cols-2">
+          <figure className="overflow-hidden rounded-xl border border-[#d9dee8] bg-[#f7f9fc] p-2">
+            <div className="flex aspect-[4/3] items-center justify-center overflow-hidden rounded-lg bg-white p-2">
+              <Image
+                src="/adapt/codesign.png"
+                alt="Co-design session and iteration process"
+                width={1200}
+                height={900}
+                className="h-full w-full object-contain"
+              />
+            </div>
+            <figcaption className="px-1 pt-2 text-xs text-[#4b5163]">
+              We used a piece of fabric with different types of closings to test which one
+              our client preffered.
+            </figcaption>
+          </figure>
+          <figure className="overflow-hidden rounded-xl border border-[#d9dee8] bg-[#f7f9fc] p-2">
+            <div className="flex aspect-[4/3] items-center justify-center overflow-hidden rounded-lg bg-white p-2">
+              <Image
+                src="/adapt/prototype.JPG"
+                alt="Prototype exploration for adaptive costume elements"
+                width={1200}
+                height={900}
+                className="h-full w-full object-contain"
+              />
+            </div>
+            <figcaption className="px-1 pt-2 text-xs text-[#4b5163]">
+              In this image our client is testing the fit and comfort of the adapted vest with magnet closures.
+            </figcaption>
+          </figure>
         </div>
       </section>
 
@@ -144,9 +173,15 @@ export default function AdaptAccessibleFashionPage() {
           The final costume balanced accessibility with playful theatrical
           aesthetics and reflected the performer&apos;s personality and vision.
         </p>
-        <div className="case-placeholder rounded-xl border border-dashed border-[#cfd4df] bg-[#f7f8fb] p-4 text-sm text-[#4b5163]">
-          Image placeholder: final costume
-        </div>
+        <figure className="mx-auto w-full max-w-3xl overflow-hidden rounded-xl border border-[#d9dee8] bg-[#f7f9fc] p-2">
+          <Image
+            src="/adapt/completed-work.png"
+            alt="Completed adaptive costume work"
+            width={1400}
+            height={900}
+            className="h-auto w-full rounded-lg object-cover"
+          />
+        </figure>
       </section>
 
       <section className="case-reveal delay-10 card space-y-4 p-6">

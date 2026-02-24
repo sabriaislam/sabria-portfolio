@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 
 import { caseStudies } from "../data";
 import CaseStudyHeader from "../components/CaseStudyHeader";
@@ -134,30 +135,65 @@ export default function CreativeComputingCookbookPage() {
         <p className="text-sm text-[#4b5163]">
          We invited three SFD dance instructors to create short choreographies using LED strips, tilt sensors, and buttons in response to different prompts. Afterward, they annotated their dances, reflecting on their creative decisions, technical choices, and interactions with the electronics.
         </p>
-        <div className="case-placeholder rounded-xl border border-dashed border-[#cfd4df] bg-[#f7f8fb] p-4 text-sm text-[#4b5163]">
-          Image placeholder: clips from study
-        </div>
+        <figure className="mx-auto w-full max-w-3xl overflow-hidden rounded-xl border border-[#d9dee8] bg-[#f7f9fc] p-2">
+          <Image
+            src="/cookbook/workshop.JPEG"
+            alt="Workshop clips from the study sessions"
+            width={1400}
+            height={900}
+            className="h-auto w-full rounded-lg object-cover"
+          />
+        </figure>
         <p className="text-sm text-[#4b5163]">
           From these sessions, we produced 10 full-length videos and edited them into shorter annotated clips. We then applied the same annotation framework to previous CWP projects to ensure consistency across examples. These structured breakdowns directly informed the design of the beta experience, shaping how creative projects were presented and scaffolded on the platform.
         </p>
-        <div className="case-placeholder rounded-xl border border-dashed border-[#cfd4df] bg-[#f7f8fb] p-4 text-sm text-[#4b5163]">
-          Image placeholder: design of annotated vids
-        </div>
+        <figure className="mx-auto w-full max-w-3xl overflow-hidden rounded-xl border border-[#d9dee8] bg-[#f7f9fc] p-2">
+          <Image
+            src="/cookbook/content-development.png"
+            alt="Design of annotated videos and content development layout"
+            width={1400}
+            height={900}
+            className="h-auto w-full rounded-lg object-cover"
+          />
+        </figure>
       </section>
 
       <section className="case-reveal delay-10 card space-y-4 p-6">
         <h2 className="case-heading case-heading-pink display text-2xl">
           Solution
         </h2>
-        <div className="case-placeholder rounded-xl border border-dashed border-[#cfd4df] bg-[#f7f8fb] p-4 text-sm text-[#4b5163]">
-          Image placeholder: clips from beta version
-        </div>
+        <figure className="mx-auto w-full max-w-3xl overflow-hidden rounded-xl border border-[#d9dee8] bg-[#f7f9fc] p-2">
+          <Image
+            src="/cookbook/beta-midfi-version.png"
+            alt="Mid-fidelity beta version screens"
+            width={1400}
+            height={900}
+            className="h-auto w-full rounded-lg object-cover"
+          />
+        </figure>
         <p className="text-sm text-[#4b5163]">
           In parallel, the team developed visual design mockups aligned with the
           refined user flows.
         </p>
-        <div className="case-placeholder rounded-xl border border-dashed border-[#cfd4df] bg-[#f7f8fb] p-4 text-sm text-[#4b5163]">
-          Image placeholder: mockups of the new version
+        <div className="mx-auto grid w-full max-w-4xl gap-4 md:grid-cols-2">
+          <figure className="overflow-hidden rounded-xl border border-[#d9dee8] bg-[#f7f9fc] p-2">
+            <Image
+              src="/cookbook/Archive Page.png"
+              alt="Archive page mockup"
+              width={1200}
+              height={900}
+              className="h-auto w-full rounded-lg object-cover"
+            />
+          </figure>
+          <figure className="overflow-hidden rounded-xl border border-[#d9dee8] bg-[#f7f9fc] p-2">
+            <Image
+              src="/cookbook/homepage.png"
+              alt="Homepage mockup"
+              width={1200}
+              height={900}
+              className="h-auto w-full rounded-lg object-cover"
+            />
+          </figure>
         </div>
       </section>
 

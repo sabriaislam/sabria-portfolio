@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect, useState } from "react";
+import Image from "next/image";
 
 const mediaSections = [
   {
@@ -66,7 +67,7 @@ const mediaSections = [
     items: [
       {
         label: "Motion Capure Final",
-        src: "https://youtu.be/J9Woy2qrcvc?si=b3Nvp9gtJOPlFnb5",
+        src: "https://www.youtube.com/embed/J9Woy2qrcvc",
         kind: "video",
       },
       {
@@ -92,7 +93,7 @@ const mediaSections = [
       {
         label: "Generasian 25",
         src: "/zines/generasian25.png",
-        link: "https://drive.google.com/file/d/1zwJrHnGwmGeW-DpEfL0Z7jwIIKYr8tFM/view",
+        link: "https://drive.google.com/file/d/1VQBPF30rYE1M-lr9mUYOni7jtOBLoFwE/view?usp=sharing",
       },
       {
         label: "Threads (front)",
@@ -111,8 +112,6 @@ const mediaSections = [
     ],
   },
 ];
-
-const colorClasses = ["pink", "blue", "green", "yellow", "purple", "orange"];
 
 export default function MediaPage() {
   const [activeImage, setActiveImage] = useState<{
@@ -179,7 +178,7 @@ export default function MediaPage() {
                           rel="noreferrer"
                           aria-label={`Open ${label}`}
                         >
-                          <img src={src} alt={label} loading="lazy" />
+                          <Image src={src} alt={label} width={1200} height={900} />
                         </a>
                       ) : src ? (
                         <button
@@ -188,7 +187,7 @@ export default function MediaPage() {
                           onClick={() => setActiveImage({ src, label })}
                           aria-label={`Expand ${label}`}
                         >
-                          <img src={src} alt={label} loading="lazy" />
+                          <Image src={src} alt={label} width={1200} height={900} />
                         </button>
                       ) : (
                         "media"
@@ -227,7 +226,12 @@ export default function MediaPage() {
               aria-label="Close expanded image"
               onClick={() => setActiveImage(null)}
             >
-              <img src={activeImage.src} alt={activeImage.label} />
+              <Image
+                src={activeImage.src}
+                alt={activeImage.label}
+                width={1600}
+                height={1200}
+              />
             </button>
           </figure>
         </div>
