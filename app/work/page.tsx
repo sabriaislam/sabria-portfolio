@@ -14,7 +14,7 @@ type ArchivedProject = {
 
 const archivedProjects: ArchivedProject[] = [
   {
-    title: "Airline System",
+    title: "Airline System | Database Management System",
     summary:
       "Designed and programmed a mock Airline System that includes customer portal and employee portal",
     tags: ["DBMS", "MySQL", "Relational Diagrams"],
@@ -23,34 +23,34 @@ const archivedProjects: ArchivedProject[] = [
     external: true,
   },
   {
-    title: "Van Alen Institute | Public Art Map",
+    title: "Public Art Map | Van Alen Institute",
     summary:
-      "A publication design project balancing narrative pacing with typographic hierarchy.",
-    tags: ["Publication", "Typography", "Storytelling"],
+      "Digital map of public art pieces in NYC",
+    tags: ["Python", "Research", "Tool"],
     thumbnail: "/thumbnails/publicartmap.png",
     href: "https://dull-birch-940.notion.site/Public-Art-Map-Exhibition-311a38332a4880fa85e9fb1cfdb5a05d?source=copy_link",
     external: true,
   },
   {
-    title: "Eclipse SoundScape Redesign",
+    title: "Website Redesign | Eclipse SoundScape ",
     summary:
-      "Redesigning citizen science website for Eclipse Soundscapes",
+      "Redesigning Eclipse Soundscape's website",
     tags: ["UX/UI", "Web Redesign", "User Research"],
     thumbnail: "/thumbnails/escape-soundscapes.png",
     href: "https://dull-birch-940.notion.site/NASA-Eclipse-Soundscapes-Site-Redesign-311a38332a488038a948f38a85b8c73f?source=copy_link",
     external: true,
   },
   {
-    title: "Making Art Accessible with HeartShare",
+    title: "Making Accessible Art | HeartShare ",
     summary:
-      "Creating a visual description for an art piece shown at HeartShare's Art Gallery",
+      "Co-creating visual descriptions with artsists with Disabilities",
     tags: ["Gallery Curation", "Accessibility", "Co-creation"],
     thumbnail: "/thumbnails/heartshare.png",
     href: "https://dull-birch-940.notion.site/Making-Art-Accessible-with-HeartShare-311a38332a48806f8f8fd26d7e5ef024?source=copy_link",
     external: true,
   },
   {
-    title: "Seven To Eleven",
+    title: "Seven To Eleven | Short Film",
     summary:
       "An experimental short film using motion capture",
     tags: ["Motion Capture", "Video Editing"],
@@ -68,10 +68,6 @@ export default function WorkPage() {
           <h1 className="display text-4xl leading-tight text-[#111118] md:text-4xl font-semibold">
             Work
           </h1>
-          <p className="text-lg text-[#4b5163]">
-            Case studies and archived projects across UX, programming, virtual production, 
-            and visual design.
-          </p>
         </div>
       </section>
 
