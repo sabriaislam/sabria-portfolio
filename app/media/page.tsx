@@ -133,9 +133,6 @@ export default function MediaPage() {
       <section className="space-y-4">
         <div className="w-full border border-black/5 bg-white px-8 py-8 md:px-10 md:py-10 shadow-[0_12px_32px_rgba(17,17,24,0.08)]">
           <h1 className="display text-4xl md:text-5xl font-semibold">Media</h1>
-          <p className="mt-2 max-w-3xl text-lg text-[#4b5163]">
-            An archive of past media projects in Graphic Design, Merchandise, Zines, and 3D Models.
-          </p>
         </div>
       </section>
 

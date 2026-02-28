@@ -65,7 +65,7 @@ export default function WorkPage() {
     <div className="space-y-16 pb-12">
       <section className="surface grid gap-10 bg-white/70 p-10 shadow-[0_20px_60px_rgba(17,17,24,0.08)] backdrop-blur md:grid-cols-[1.4fr_0.6fr]">
         <div className="space-y-6">
-          <h1 className="display text-4xl leading-tight text-[#111118] md:text-4xl font-semibold">
+          <h1 className="display text-4xl md:text-5xl font-semibold">
             Work
           </h1>
         </div>
