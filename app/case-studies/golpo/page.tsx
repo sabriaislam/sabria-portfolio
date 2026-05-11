@@ -13,18 +13,18 @@ const study = caseStudies.find((entry) => entry.slug === "golpo");
 const panels = [
   {
     src: "/senior-project/panels.png",
-    alt: "Panel 1 — overview layout",
-    caption: "Early panel layout exploring how questions would be presented inside the booth.",
+    alt: "Panel 1",
+    caption: "Page for entering name, used Photoshop and a cutout clips of my friend to design the background",
   },
   {
     src: "/senior-project/panel-2.png",
     alt: "Panel 2 — prompt design",
-    caption: "Iteration on prompt wording — finding language that felt open without being overwhelming.",
+    caption: "Page to write your story, the background has the texture of one of my mother's salwar kamiz",
   },
   {
     src: "/senior-project/panel-3.png",
     alt: "Panel 3 — final prompt",
-    caption: "Final prompt panel used in the installation. Simple, handwritten, inviting.",
+    caption: "Final prompt, inviting users to email their postcard to themself",
   },
 ];
 
