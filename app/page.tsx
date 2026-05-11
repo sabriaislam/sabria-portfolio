@@ -19,7 +19,7 @@ export default function Home() {
       </section>
       <section className="home-case-studies space-y-6">
         <div className="grid gap-6 md:grid-cols-2">
-          {caseStudies.map((study, index) => (
+          {caseStudies.filter((s) => !s.archived).map((study, index) => (
             <article
               key={study.title}
               className={`home-case-card home-case-card--${index + 1} card space-y-4 p-6`}

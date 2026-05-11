@@ -14,14 +14,6 @@ type ArchivedProject = {
 
 const archivedProjects: ArchivedProject[] = [
   {
-    title: "ADAPT Accessible Fashion",
-    summary:
-      "Sew an accessible costume garment for an actor with physical disability",
-    tags: ["Accessibility", "Sustainability", "Textile"],
-    thumbnail: "/thumbnails/adapt.png",
-    href: "/case-studies/adapt-accessible-fashion",
-  },
-  {
     title: "Airline System | Database Management System",
     summary:
       "Designed and programmed a mock Airline System that includes customer portal and employee portal",
@@ -84,7 +76,7 @@ export default function WorkPage() {
           <h2 className="display text-3xl">Current Projects</h2>
         </div>
         <div className="grid gap-6 md:grid-cols-2">
-          {caseStudies.map((study, index) => (
+          {caseStudies.filter((s) => !s.archived).map((study, index) => (
             <article
               key={study.title}
               className={`home-case-card home-case-card--${index + 1} card space-y-4 p-6`}
@@ -126,6 +118,39 @@ export default function WorkPage() {
           <span className="chip chip--small">Swipe</span>
         </div>
         <div className="work-archive-carousel" aria-label="Archived projects carousel">
+          {caseStudies.filter((s) => s.archived).map((study) => (
+            <article key={study.title} className="work-archive-slide card space-y-4 p-6">
+              <Link
+                href={`/case-studies/${study.slug}`}
+                className="block space-y-4"
+                aria-label={`Open archived project: ${study.title}`}
+              >
+                <div className="case-thumb w-full overflow-hidden">
+                  <Image
+                    src={study.thumbnail}
+                    alt={`${study.title} thumbnail`}
+                    width={1200}
+                    height={900}
+                    className="home-case-image h-full w-full object-cover"
+                  />
+                </div>
+                <div className="space-y-2">
+                  <h3 className="display text-2xl">{study.title}</h3>
+                  <p className="text-sm text-[#4b5163]">{study.summary}</p>
+                  <div className="flex flex-wrap gap-2">
+                    {study.tags.map((tag) => (
+                      <span key={tag} className="chip chip--small">
+                        {tag}
+                      </span>
+                    ))}
+                  </div>
+                  <span className="text-sm font-semibold text-[#111118]">
+                    View case study ↗
+                  </span>
+                </div>
+              </Link>
+            </article>
+          ))}
           {archivedProjects.map((project) => (
             <article key={project.title} className="work-archive-slide card space-y-4 p-6">
               <Link
