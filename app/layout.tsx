@@ -4,6 +4,7 @@ import Link from "next/link";
 import { Inter } from "next/font/google";
 import FlowerCluster from "./components/FlowerCluster";
 import SiteFooter from "./components/SiteFooter";
+import Lightbox from "./components/Lightbox";
 import "./globals.css";
 
 const inter = Inter({
@@ -30,6 +31,7 @@ export default function RootLayout({
       <body
         className={`${inter.variable} antialiased`}
       >
+        <Lightbox />
         <div className="page-wrap">
           <div className="site-shell">
             <aside className="site-nav">

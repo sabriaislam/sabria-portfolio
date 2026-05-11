@@ -11,8 +11,9 @@ export default function Home() {
             Designing inclusive interactive experiences that center emotion, learning, and community.
           </h1>
           <p className="text-lg text-[#4b5163]">
-            Writing research papers @ Elevate Lab <br></br>
-            Building my senior design project @ 370 Jay
+            Writing Papers @ Elevate Lab
+            <br></br>
+           Currently Freelance Designing + Social Media 
           </p>
         </div>
       </section>

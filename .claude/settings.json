@@ -1,0 +1,10 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(npx tsc *)",
+      "Bash(sips -g pixelWidth -g pixelHeight /Users/sabriaislam/sabria-portfolio/public/senior-project/panels.png /Users/sabriaislam/sabria-portfolio/public/senior-project/panel-2.png /Users/sabriaislam/sabria-portfolio/public/senior-project/panel-3.png)",
+      "Bash(sips --cropToHeightWidth 640 1280 --cropOffset 96 0 /Users/sabriaislam/sabria-portfolio/public/senior-project/panel-3.png)",
+      "Bash(sips -g pixelWidth -g pixelHeight /Users/sabriaislam/sabria-portfolio/public/senior-project/panel-3.png)"
+    ]
+  }
+}

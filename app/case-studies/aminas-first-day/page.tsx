@@ -75,7 +75,8 @@ export default function AminasFirstDayPage() {
             alt="Amina user flow diagram"
             width={1400}
             height={900}
-            className="h-auto w-full rounded-lg object-cover"
+            className="h-auto w-full cursor-zoom-in rounded-lg object-cover"
+            data-lightbox="true"
           />
         </figure>
       </section>

@@ -141,7 +141,8 @@ export default function CreativeComputingCookbookPage() {
             alt="Workshop clips from the study sessions"
             width={1400}
             height={900}
-            className="h-auto w-full rounded-lg object-cover"
+            className="h-auto w-full cursor-zoom-in rounded-lg object-cover"
+              data-lightbox="true"
           />
         </figure>
         <p className="text-sm text-[#4b5163]">
@@ -153,7 +154,8 @@ export default function CreativeComputingCookbookPage() {
             alt="Design of annotated videos and content development layout"
             width={1400}
             height={900}
-            className="h-auto w-full rounded-lg object-cover"
+            className="h-auto w-full cursor-zoom-in rounded-lg object-cover"
+              data-lightbox="true"
           />
         </figure>
       </section>
@@ -168,7 +170,8 @@ export default function CreativeComputingCookbookPage() {
             alt="Mid-fidelity beta version screens"
             width={1400}
             height={900}
-            className="h-auto w-full rounded-lg object-cover"
+            className="h-auto w-full cursor-zoom-in rounded-lg object-cover"
+              data-lightbox="true"
           />
         </figure>
         <p className="text-sm text-[#4b5163]">
@@ -182,7 +185,8 @@ export default function CreativeComputingCookbookPage() {
               alt="Archive page mockup"
               width={1200}
               height={900}
-              className="h-auto w-full rounded-lg object-cover"
+              className="h-auto w-full cursor-zoom-in rounded-lg object-cover"
+              data-lightbox="true"
             />
           </figure>
           <figure className="overflow-hidden rounded-xl border border-[#d9dee8] bg-[#f7f9fc] p-2">
@@ -191,7 +195,8 @@ export default function CreativeComputingCookbookPage() {
               alt="Homepage mockup"
               width={1200}
               height={900}
-              className="h-auto w-full rounded-lg object-cover"
+              className="h-auto w-full cursor-zoom-in rounded-lg object-cover"
+              data-lightbox="true"
             />
           </figure>
         </div>

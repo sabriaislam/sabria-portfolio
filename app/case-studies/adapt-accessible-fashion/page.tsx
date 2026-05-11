@@ -131,7 +131,8 @@ export default function AdaptAccessibleFashionPage() {
                 alt="Co-design session and iteration process"
                 width={1200}
                 height={900}
-                className="h-full w-full object-contain"
+                className="h-full w-full cursor-zoom-in object-contain"
+                data-lightbox="true"
               />
             </div>
             <figcaption className="px-1 pt-2 text-xs text-[#4b5163]">
@@ -146,7 +147,8 @@ export default function AdaptAccessibleFashionPage() {
                 alt="Prototype exploration for adaptive costume elements"
                 width={1200}
                 height={900}
-                className="h-full w-full object-contain"
+                className="h-full w-full cursor-zoom-in object-contain"
+                data-lightbox="true"
               />
             </div>
             <figcaption className="px-1 pt-2 text-xs text-[#4b5163]">
@@ -179,7 +181,8 @@ export default function AdaptAccessibleFashionPage() {
             alt="Completed adaptive costume work"
             width={1400}
             height={900}
-            className="h-auto w-full rounded-lg object-cover"
+            className="h-auto w-full cursor-zoom-in rounded-lg object-cover"
+            data-lightbox="true"
           />
         </figure>
       </section>

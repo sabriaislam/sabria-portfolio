@@ -14,6 +14,14 @@ type ArchivedProject = {
 
 const archivedProjects: ArchivedProject[] = [
   {
+    title: "ADAPT Accessible Fashion",
+    summary:
+      "Sew an accessible costume garment for an actor with physical disability",
+    tags: ["Accessibility", "Sustainability", "Textile"],
+    thumbnail: "/thumbnails/adapt.png",
+    href: "/case-studies/adapt-accessible-fashion",
+  },
+  {
     title: "Airline System | Database Management System",
     summary:
       "Designed and programmed a mock Airline System that includes customer portal and employee portal",

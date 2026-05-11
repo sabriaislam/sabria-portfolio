@@ -40,7 +40,8 @@ export default function NyuSilverIconRedesignPage() {
             alt="Previous NYU Silver icons"
             width={1400}
             height={900}
-            className="h-auto w-full rounded-lg object-contain"
+            className="h-auto w-full cursor-zoom-in rounded-lg object-contain"
+            data-lightbox="true"
           />
         </figure>
       </section>
@@ -78,7 +79,8 @@ export default function NyuSilverIconRedesignPage() {
             alt="Final NYU Silver icons"
             width={1400}
             height={900}
-            className="h-auto w-full rounded-lg object-contain"
+            className="h-auto w-full cursor-zoom-in rounded-lg object-contain"
+            data-lightbox="true"
           />
         </figure>
         <p className="text-sm text-[#4b5163]">
