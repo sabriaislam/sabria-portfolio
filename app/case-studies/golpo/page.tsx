@@ -153,6 +153,22 @@ export default function GolpoPage() {
           </figure>
         </div>
       </section>
+      {/* Example Print */}
+      <section className="case-reveal delay-5 card space-y-4 p-6">
+        <h2 className="case-heading case-heading-black display text-2xl">Example Print</h2>
+        <figure className="overflow-hidden rounded-xl border border-[#d9dee8] bg-[#f7f9fc] p-2">
+          <div className="overflow-hidden rounded-lg bg-white">
+            <Image
+              src="/senior-project/example.jpeg"
+              alt="Example print"
+              width={1200}
+              height={900}
+              className="h-auto w-full cursor-zoom-in object-contain"
+              data-lightbox="true"
+            />
+          </div>
+        </figure>
+      </section>
       {/* Additional Elements */}
       <section className="case-reveal delay-7 card space-y-4 p-6">
         <h2 className="case-heading case-heading-black display text-2xl">Additional Elements</h2>
